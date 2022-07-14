@@ -136,9 +136,10 @@ class FL_PostForum{
 			<div id="dien_tich" class="f_row">
 				<input type="text" value='Diện tích' disabled>
 				<input type="hidden" name="dien_tich_8" class="dien_tich">
-				<input type="number" class="dt_from" placeholder="Từ">
-				<input type="number" class="dt_to" placeholder="đến">
-				<span>m2</span>
+				<div class="dt_from_to">
+					<input type="number" class="dt_from" placeholder="Từ">
+					<input type="number" class="dt_to" placeholder="đến m2">
+				</div>
 			</div>
 			<div class="khoang_gia f_row">
 				<select id="khoang_gia" name="khoang_gia_9">

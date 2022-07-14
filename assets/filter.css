@@ -4,17 +4,29 @@
   .filter_home .f_row {
     width: 25%;
     padding: 5px 10px; }
+  @media (max-width: 991px) {
+    .filter_home {
+      display: block; }
+      .filter_home .f_row {
+        width: 100%; } }
   .filter_home #quan_huyen_hn {
     display: none; }
   .filter_home #quan_huyen_hcm {
     display: none; }
-  .filter_home #dien_tich .dt_from, .filter_home #dien_tich .dt_to, .filter_home #dien_tich span {
-    display: none; }
-  .filter_home #dien_tich:hover .dt_to, .filter_home #dien_tich:hover .dt_from, .filter_home #dien_tich:hover span {
-    display: block; }
+  .filter_home #dien_tich {
+    position: relative;
+    overflow: hidden; }
+    .filter_home #dien_tich .dt_from_to {
+      position: absolute;
+      left: 0;
+      bottom: -100%; }
+  .filter_home #dien_tich:hover .dt_from_to {
+    left: 0;
+    top: 50px; }
   .filter_home button {
     width: 100%;
-    transition: 0.3s ease-in; }
+    transition: 0.3s ease-in;
+    color: #fff; }
     .filter_home button:hover {
       background: #026613; }
   .filter_home.filter_widget {

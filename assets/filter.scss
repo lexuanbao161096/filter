@@ -5,6 +5,12 @@
 		width: 25%;
 		padding: 5px 10px;
 	}
+	@media ( max-width: 991px ){
+		display:block;
+		.f_row{
+			width: 100%;
+		}
+	}
 	#quan_huyen_hn{
 		display: none;
 	}
@@ -12,19 +18,25 @@
 		display: none;
 	}
 	#dien_tich{
-		.dt_from, .dt_to, span{
-			display: none;
+		position: relative;
+		overflow: hidden;
+		.dt_from_to{
+			position: absolute;
+			left: 0;
+			bottom: -100%;
 		}
 
 	}
 	#dien_tich:hover{
-		.dt_to, .dt_from, span{
-			display: block;
+		.dt_from_to{
+			left: 0;
+			top: 50px;
 		}
 	}
 	button{
 		width: 100%;
 		transition: 0.3s ease-in;
+		color: #fff;
 		&:hover{
 			background: #026613;
 		}
