@@ -1,0 +1,48 @@
+.filter_home{
+	display: flex;
+	flex-wrap: wrap;
+	.f_row{
+		width: 25%;
+		padding: 5px 10px;
+	}
+	#quan_huyen_hn{
+		display: none;
+	}
+	#quan_huyen_hcm{
+		display: none;
+	}
+	#dien_tich{
+		.dt_from, .dt_to, span{
+			display: none;
+		}
+
+	}
+	#dien_tich:hover{
+		.dt_to, .dt_from, span{
+			display: block;
+		}
+	}
+	button{
+		width: 100%;
+		transition: 0.3s ease-in;
+		&:hover{
+			background: #026613;
+		}
+	}
+	&.filter_widget{
+		display: block;
+		border: 1px #aaa solid;
+		padding: 10px;
+		padding-top: 20px;
+		border-radius: 5px;
+		background-color: #f3f3f3;
+		.f_row{
+			width: 100%;
+		}
+	}
+
+
+}
+.filterwp .fwp-topbar{
+	display: none;
+}

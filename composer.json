@@ -1,0 +1,8 @@
+{
+	"name": "elightup/like-forum",
+	"description": "",
+	"type": "wordpress-plugin",
+	"autoload": {
+		"psr-4": { "LFR\\": ["src/"] }
+	}
+}

@@ -1,0 +1,33 @@
+.filter_home {
+  display: flex;
+  flex-wrap: wrap; }
+  .filter_home .f_row {
+    width: 25%;
+    padding: 5px 10px; }
+  .filter_home #quan_huyen_hn {
+    display: none; }
+  .filter_home #quan_huyen_hcm {
+    display: none; }
+  .filter_home #dien_tich .dt_from, .filter_home #dien_tich .dt_to, .filter_home #dien_tich span {
+    display: none; }
+  .filter_home #dien_tich:hover .dt_to, .filter_home #dien_tich:hover .dt_from, .filter_home #dien_tich:hover span {
+    display: block; }
+  .filter_home button {
+    width: 100%;
+    transition: 0.3s ease-in; }
+    .filter_home button:hover {
+      background: #026613; }
+  .filter_home.filter_widget {
+    display: block;
+    border: 1px #aaa solid;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 5px;
+    background-color: #f3f3f3; }
+    .filter_home.filter_widget .f_row {
+      width: 100%; }
+
+.filterwp .fwp-topbar {
+  display: none; }
+
+/*# sourceMappingURL=filter.css.map */
